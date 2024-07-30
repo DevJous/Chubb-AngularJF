@@ -20,6 +20,10 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './components/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { CartComponent } from './components/cart/cart.component';
+import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button'; 
 
 @NgModule({
   declarations: [
@@ -27,7 +31,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     LoginComponent,
     ProductListComponent,
     ProductDetailComponent,
-    HeaderComponent
+    HeaderComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     HttpClientModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule,
+    MatTableModule,
+    MatButtonModule
   ],
   providers: [
     provideAnimationsAsync(),

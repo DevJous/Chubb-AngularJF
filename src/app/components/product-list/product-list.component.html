@@ -3,12 +3,18 @@
     <mat-spinner></mat-spinner>
   </div>
   <div *ngIf="!loading" class="product-list">
-    <div *ngFor="let product of products" (click)="viewProduct(product.id)">
+    <div *ngFor="let product of products" (click)="viewProduct(product.id)" class="product-card">
       <mat-card>
-        <mat-card-title>{{ product.title }}</mat-card-title>
-        <img mat-card-image [src]="product.image" alt="{{ product.title }}">
-        <mat-card-content>
-          <p>{{ product.description }}</p>
+        <mat-card-title id="card-title">
+          <div class="scrollable-text">{{ product.title }}</div>
+        </mat-card-title>
+        <img mat-card-image [src]="product.image" alt="{{ product.title }}" id="card-image">
+        <mat-card-content id="card-content">
+          <p><b>Precio:</b> ${{ product.price }}</p>
+          <p><b>Valoración:</b> {{ product.rating.rate }}/5</p>
+          <!-- <div class="scrollable-text">
+           {{ product.description }}
+          </div> -->
         </mat-card-content>
       </mat-card>
     </div>

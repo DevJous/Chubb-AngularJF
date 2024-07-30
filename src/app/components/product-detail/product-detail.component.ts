@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css'
 })
-export class ProductDetailComponent {
+export class ProductDetailComponent implements OnInit {
   product: any;
   loading = true;
 
@@ -30,11 +30,12 @@ export class ProductDetailComponent {
 
   addToCart(): void {
     this.cartService.addProduct(this.product);
+    this.cartService.incrementCounter();
     alert('Producto agregado al carrito');
   }
 
   goBack(): void {
-    this.router.navigate(['/products']); // Navegar hacia la ruta '/products'
+    this.router.navigate(['/products']);
   }
 
 }
