@@ -1,47 +1,42 @@
-/* login.component.css */
-
-/* Estilo para el formulario de login */
 .login-form {
-    max-width: 300px; /* Ancho del formulario */
-    margin: 40px auto; /* Margen y centrado */
-    padding: 20px; /* Padding interior */
-    background-color: #f9f9f9; /* Fondo claro */
-    border: 1px solid #ccc; /* Borde gris claro */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    border-radius: 4px; /* Esquinas redondeadas */
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
   }
   
-  /* Estilo para los campos de formulario */
   mat-form-field {
-    width: 100%; /* Ancho completo */
-    margin-bottom: 16px; /* Margen inferior */
+    width: 100%;
+    margin-bottom: 16px;
   }
   
   mat-label {
-    font-size: 14px; /* Tamaño de la etiqueta */
-    color: #333; /* Negro */
+    font-size: 14px;
+    color: #333;
   }
   
   input[matInput] {
-    font-size: 16px; /* Tamaño de la entrada */
-    padding: 10px; /* Padding interior */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Esquinas redondeadas */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  /* Estilo para el botón de login */
   button[mat-raised-button] {
-    width: 100%; /* Ancho completo */
-    font-size: 16px; /* Tamaño del botón */
-    padding: 10px; /* Padding interior */
-    background-color: #337ab7; /* Azul claro */
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #337ab7;
     color: #fff; /* Blanco */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Esquinas redondeadas */
-    cursor: pointer; /* Cursor de mano */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
   
   button[mat-raised-button]:hover {
-    background-color: #23527c; /* Azul oscuro */
+    background-color: #23527c;
   }
