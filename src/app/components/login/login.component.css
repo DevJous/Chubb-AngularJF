@@ -1,0 +1,47 @@
+/* login.component.css */
+
+/* Estilo para el formulario de login */
+.login-form {
+    max-width: 300px; /* Ancho del formulario */
+    margin: 40px auto; /* Margen y centrado */
+    padding: 20px; /* Padding interior */
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 1px solid #ccc; /* Borde gris claro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 4px; /* Esquinas redondeadas */
+  }
+  
+  /* Estilo para los campos de formulario */
+  mat-form-field {
+    width: 100%; /* Ancho completo */
+    margin-bottom: 16px; /* Margen inferior */
+  }
+  
+  mat-label {
+    font-size: 14px; /* Tamaño de la etiqueta */
+    color: #333; /* Negro */
+  }
+  
+  input[matInput] {
+    font-size: 16px; /* Tamaño de la entrada */
+    padding: 10px; /* Padding interior */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+  
+  /* Estilo para el botón de login */
+  button[mat-raised-button] {
+    width: 100%; /* Ancho completo */
+    font-size: 16px; /* Tamaño del botón */
+    padding: 10px; /* Padding interior */
+    background-color: #337ab7; /* Azul claro */
+    color: #fff; /* Blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor de mano */
+  }
+  
+  button[mat-raised-button]:hover {
+    background-color: #23527c; /* Azul oscuro */
+  }

@@ -1,0 +1,89 @@
+/* product-detail.component.css */
+
+/* Estilo para el spinner de carga */
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px; /* Tamaño del spinner */
+    color: #337ab7; /* Azul claro */
+  }
+  
+  /* Estilo para la vista de detalles del producto */
+  .product-detail {
+    max-width: 800px; /* Ancho máximo */
+    margin: 40px auto; /* Margen y centrado */
+    padding: 20px; /* Padding interior */
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 1px solid #ccc; /* Borde gris claro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 4px; /* Esquinas redondeadas */
+  }
+  
+  .product-detail mat-card {
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+  
+  .product-detail mat-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-detail mat-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Negro */
+  }
+  
+  .product-detail img[mat-card-image] {
+    width: 100%;
+    height: 300px; /* Alto de la imagen */
+    object-fit: cover; /* Ajustar la imagen al contenedor */
+    border-radius: 4px 4px 0 0; /* Esquinas redondeadas */
+  }
+  
+  .product-detail mat-card-content {
+    padding: 20px;
+  }
+  
+  .product-detail p {
+    margin-bottom: 16px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button-container button {
+    margin: 0 10px; /* add 10px margin to each button */
+  }
+  
+  .product-detail button[mat-raised-button] {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #337ab7; /* Azul claro */
+    color: #fff; /* Blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor de mano */
+  }
+  
+  .product-detail button[mat-raised-button]:hover {
+    background-color: #23527c; /* Azul oscuro */
+  }
+  
+  .product-detail button[mat-raised-button].accent {
+    background-color: #ff9800; /* Naranja */
+    color: #fff; /* Blanco */
+  }
+  
+  .product-detail button[mat-raised-button].accent:hover {
+    background-color: #ff69b4; /* Naranja oscuro */
+  }

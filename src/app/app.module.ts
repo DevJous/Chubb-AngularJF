@@ -16,12 +16,18 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { MatIconModule } from '@angular/material/icon';
+import { HeaderComponent } from './components/header/header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductDetailComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatProgressSpinnerModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [
     provideAnimationsAsync(),

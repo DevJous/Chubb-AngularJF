@@ -1,14 +1,3 @@
-// import { Injectable } from '@angular/core';
-
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class AuthService {
-
-//   constructor() { }
-// }
-
-// auth.service.ts
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -16,10 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
   private isAuthenticated = false;
+  private username: string = '';
 
   login(username: string, password: string): boolean {
     if (username === 'admin' && password === 'admin') {
       this.isAuthenticated = true;
+      this.username = username;
+      
       return true;
     }
     return false;
@@ -31,5 +23,9 @@ export class AuthService {
 
   isLoggedIn(): boolean {
     return this.isAuthenticated;
+  }
+
+  getUserName(): any {
+    return this.username;
   }
 }
